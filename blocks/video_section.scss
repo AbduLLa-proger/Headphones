@@ -1,0 +1,208 @@
+@import "mixins";
+@import "vars";
+
+.video-section {
+  @include display(flex, column, unset, unset);
+  width: 100%;
+  height: max-content;
+  position: relative;
+  &_inner {
+    width: 100%;
+    position: relative;
+    & video {
+      height: max-content;
+    }
+    & .play {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 5vw;
+      cursor: pointer;
+    }
+    & .fad::after {
+      color: white;
+      @include transition(0.3s, color);
+      opacity: 1;
+    }
+    & .fad::before {
+      color: black;
+      @include transition(0.3s, color);
+    }
+    & .fad:hover::after {
+      color: black;
+      @include transition(0.3s, color);
+    }
+    & .fad:hover::before {
+      color: white;
+      @include transition(0.3s, color);
+    }
+  }
+  &-inner {
+    &_background,
+    &_block {
+      position: absolute;
+      width: 100%;
+      height: 9vw;
+      background: black;
+      z-index: 100;
+      bottom: 0;
+      opacity: .8;
+    }
+    &_block {
+      @include display(flex, unset, center, center);
+      background: transparent;
+      opacity: 1;
+    }
+    &-block {
+      &_container {
+        @include display(flex, unset, space-between, center);
+        width: 80%;
+        height: 25vh;
+        position: absolute;
+        z-index: 100;
+      }
+      &_content {
+        @include display(flex, unset, space-between, center);
+        width: 20vw;
+        height: 75%;
+        position: relative;
+        padding: 0 3vw;
+        &:first-child {
+          width: 50vw;
+          & video:hover {
+            cursor: pointer;
+          }
+        }
+        & div {
+          display: flex;
+          align-items: center;
+          height: 66%;
+          &:nth-child(2) {
+            margin-left: 1vw;
+            margin-right: .5vw;
+          }
+          &:nth-child(3) {
+            margin-left: .5vw;
+            margin-right: 1vw;
+          }
+        }
+        & video {
+          height: 7vw;
+        }
+        & i {
+          font-size: 1vw;
+          color: white;
+          cursor: pointer;
+          &:nth-child(2) {
+            margin: 0 2vw;
+          }
+        }
+        & .fa-cog {
+          margin-left: 9.5vw;
+        }
+      }
+    }
+  }
+  &_progress,
+  &_duration {
+    width: 0px;
+    height: 1vh;
+    background-color: $videoDuration;
+    position: absolute;
+    bottom: 0;
+    z-index: 110;
+    cursor: pointer;
+  }
+  &_duration {
+    background-color: black;
+    opacity: .5;
+    width: 100%;
+    z-index: 100;
+  }
+
+}
+
+.volume {
+  &-line {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 8vw;
+    height: 2vh;
+    left: 25%;
+    top: 44%;
+    &_inner {
+      display: flex;
+      align-items: center;
+      position: relative;
+      width: 100%;
+    }
+  }
+  &_circle {
+    background: white;
+    position: absolute;
+    width: .8vw;
+    height: .8vw;
+    @include border(50%);
+    cursor: pointer;
+    z-index: 150;
+    left: 90%;
+  }
+  &_indicator,
+  &_progress {
+    position: absolute;
+    width: 100%;
+    height: .7vh;
+    background: white;
+    @include border(25px);
+    left: 0;
+    cursor: pointer;
+    z-index: 150;
+  }
+  &_indicator {
+    width: 8vw;
+    opacity: .5;
+    background: rgb(150, 150, 150);
+    z-index: 100;
+  }
+}
+
+.main-video {
+  cursor: pointer;
+}
+
+.black-box {
+  display: flex !important;
+  @include display(flex, unset, center, center);
+  background-color: black;
+  color: white;
+  width: 10.3vw;
+  height: 5.8vw;
+  font-family: $font2 !important;
+  font-weight: 400 !important;
+  font-size: 1vw;
+  position: relative;
+  cursor: pointer;
+  &::before {
+    font-family: "Font Awesome 5 Pro";
+    font-size: .8vw;
+    content: "\f054";
+    position: absolute;
+    left: 65%;
+    top: 45%;
+
+  }
+}
+.fa-undo {
+  font-size: 11vw !important;
+  &:hover::after,
+  &:hover::before {
+    color: yellow !important;
+  }
+
+  &::after,
+  &::before {
+    color: white !important;
+  }
+}

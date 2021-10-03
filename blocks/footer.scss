@@ -1,0 +1,68 @@
+@import 'vars';
+@import 'mixins';
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 5vw;
+  &-line {
+    height: .01vw;
+    width: 100%;
+    background-color: black;
+    opacity: .5;
+  }
+  &-inner {
+    @include display(flex, unset, space-between, center);
+    padding: 0 3vw;
+    margin-top: 5vw;
+    &_block {
+      @include display(flex, column, space-between, unset);
+      width: 23%;
+      height: 7vw;
+      & p {
+        letter-spacing: .1vw;
+      }
+      &:first-child,
+      &:nth-child(2) {
+        width: 16%;
+        & p {
+          letter-spacing: .1vw;
+        }
+      }
+      &:nth-child(3) {
+        align-items: center;
+        width: 25%;
+        margin-right: 5vw;
+        & p {
+          @include font($font2, unset, 700, $color6, uppercase, 0.2vw);
+        }
+      }
+      &:last-child span {
+        @include display(flex, unset, space-between, center);
+        & i {
+          font-size: 1vw;
+        }
+      }
+      & p {
+        @include font($font1, 1vw, 500, black, uppercase, unset);
+      }
+    }
+  }
+  &-icons {
+    @include display(flex, unset, space-between, center);
+    width: 15vw;
+    height: 6vw;
+    & .fab {
+      font-size: 1.5vw;
+      cursor: pointer;
+      color: black;
+      @include transition(.3s, color);
+      &:hover {
+        color: $color6;
+        @include transition(.3s, color);
+      }
+    }
+    & .fa-instagram {
+      font-size: 1.8vw;
+    }
+  }
+}

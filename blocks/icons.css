@@ -1,0 +1,261 @@
+.fa,
+.fas,
+.far,
+.fal,
+.fad,
+.fab {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+
+@font-face {
+  font-family: "Font Awesome 5 Brands";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("../webfonts/fa-brands-400.eot");
+  src: url("../webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"),
+    url("../webfonts/fa-brands-400.woff2") format("woff2"),
+    url("../webfonts/fa-brands-400.woff") format("woff"),
+    url("../webfonts/fa-brands-400.ttf") format("truetype"),
+    url("../webfonts/fa-brands-400.svg#fontawesome") format("svg");
+}
+
+.fab {
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Font Awesome 5 Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("../webfonts/fa-regular-400.eot");
+  src: url("../webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"),
+    url("../webfonts/fa-regular-400.woff2") format("woff2"),
+    url("../webfonts/fa-regular-400.woff") format("woff"),
+    url("../webfonts/fa-regular-400.ttf") format("truetype"),
+    url("../webfonts/fa-regular-400.svg#fontawesome") format("svg");
+}
+
+.far {
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 400;
+}
+
+
+@font-face {
+  font-family: "Font Awesome 5 Duotone";
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url("../webfonts/fa-duotone-900.eot");
+  src: url("../webfonts/fa-duotone-900.eot?#iefix") format("embedded-opentype"),
+    url("../webfonts/fa-duotone-900.woff2") format("woff2"),
+    url("../webfonts/fa-duotone-900.woff") format("woff"),
+    url("../webfonts/fa-duotone-900.ttf") format("truetype"),
+    url("../webfonts/fa-duotone-900.svg#fontawesome") format("svg");
+}
+
+.fad {
+  position: relative;
+  font-family: "Font Awesome 5 Duotone";
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "Font Awesome 5 Pro";
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url("../webfonts/fa-solid-900.eot");
+  src: url("../webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"),
+    url("../webfonts/fa-solid-900.woff2") format("woff2"),
+    url("../webfonts/fa-solid-900.woff") format("woff"),
+    url("../webfonts/fa-solid-900.ttf") format("truetype"),
+    url("../webfonts/fa-solid-900.svg#fontawesome") format("svg");
+}
+
+.fa,
+.fas {
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 900;
+}
+
+.fad:before {
+  position: absolute;
+  color: var(--fa-primary-color, inherit);
+  opacity: 1;
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.fad:after {
+  color: var(--fa-secondary-color, inherit);
+  opacity: 0.4;
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+@font-face {
+  font-family: "Font Awesome 5 Pro";
+  font-style: normal;
+  font-weight: 300;
+  font-display: block;
+  src: url("../webfonts/fa-light-300.eot");
+  src: url("../webfonts/fa-light-300.eot?#iefix") format("embedded-opentype"),
+    url("../webfonts/fa-light-300.woff2") format("woff2"),
+    url("../webfonts/fa-light-300.woff") format("woff"),
+    url("../webfonts/fa-light-300.ttf") format("truetype"),
+    url("../webfonts/fa-light-300.svg#fontawesome") format("svg");
+}
+
+.fal {
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 300;
+}
+
+/* BARS */
+.fa-bars:before {
+  content: "\f0c9";
+}
+.fad.fa-bars:after {
+  content: "\10f0c9";
+}
+
+/* SEARCH */
+.fa-search:before {
+  content: "\f002";
+}
+.fad.fa-search:after {
+  content: "\10f002";
+}
+
+/* ARROW RIGHT */
+.fa-arrow-right:before {
+  content: "\f061";
+}
+.fad.fa-arrow-right:after {
+  content: "\10f061";
+}
+
+/* ARROW UP */
+.fa-arrow-up:before {
+  content: "\f062";
+}
+.fad.fa-arrow-up:after {
+  content: "\10f062";
+}
+
+/* ARROW DOWN */
+.fa-arrow-down:before {
+  content: "\f063";
+}
+.fad.fa-arrow-down:after {
+  content: "\10f063";
+}
+
+/* ARROW LEFT */
+.fa-arrow-left:before {
+  content: "\f060";
+}
+.fad.fa-arrow-left:after {
+  content: "\10f060";
+}
+
+/* STAR */
+.fa-star:before {
+  content: "\f005";
+}
+.fad.fa-star:after {
+  content: "\10f005";
+}
+
+/* WEIGHT */
+.fa-weight-hanging:before {
+  content: "\f5cd";
+}
+.fad.fa-weight-hanging:after {
+  content: "\10f5cd";
+}
+
+/* VOLUME */
+.fa-volume:before {
+  content: "\f6a8";
+}
+.fad.fa-volume:after {
+  content: "\10f6a8";
+}
+
+/* SETTING */
+.fa-cog:before {
+  content: "\f013";
+}
+.fad.fa-cog:after {
+  content: "\10f013";
+}
+
+/* EXPAND */
+.fa-expand:before {
+  content: "\f065";
+}
+.fad.fa-expand:after {
+  content: "\10f065";
+}
+
+/* PLAY */
+.fa-play-circle:before {
+  content: "\f144";
+}
+.fad.fa-play-circle:after {
+  content: "\10f144";
+}
+
+/* YOUTUBE */
+.fa-youtube:before {
+  content: "\f167";
+}
+
+/* TWITTER */
+.fa-twitter:before {
+  content: "\f099";
+}
+
+/* INSTAGRAM */
+.fa-instagram:before {
+  content: "\f16d";
+}
+
+/* FACEBOOK */
+.fa-facebook-f:before {
+  content: "\f39e";
+}
+
+/* CHEVRON RIGHT */
+.fa-chevron-right:before {
+  content: "\f054"; 
+}
+.fad.fa-chevron-right:after {
+  content: "\10f054"; 
+}
+
+/* CHEVRON-DOWN */
+.fa-chevron-down:before {
+  content: "\f078"; 
+}
+.fad.fa-chevron-down:after {
+  content: "\10f078"; 
+}
+
+/* UNDO */
+
+.fa-undo:before {
+  content: "\f0e2"; 
+}
+.fad.fa-undo:after {
+  content: "\10f0e2"; 
+}

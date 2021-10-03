@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Work+Sans:wght@300;400;500;600;700&display=swap");
+.features {
+  display: flex;
+  flex-direction: column;
+  justify-content: unset;
+  align-items: unset;
+  width: 100%;
+  padding-bottom: 4vw;
+}
+
+.features-inner {
+  display: flex;
+  flex-direction: unset;
+  justify-content: space-between;
+  align-items: center;
+  width: inherit;
+}
+
+.features-inner_block {
+  display: flex;
+  flex-direction: column;
+  justify-content: unset;
+  align-items: unset;
+  position: relative;
+  margin-top: 7vw;
+}
+
+.features-inner_block .intro-inner-bottom span {
+  color: black;
+}
+
+.features-inner_block:nth-child(2) {
+  align-items: center;
+  width: 55%;
+}
+
+.features-inner_block .intro_arrows:first-child {
+  left: 10%;
+}
+
+.features-inner_block .intro_arrows:last-child {
+  right: 10%;
+}
+
+.features-inner_block .intro_arrows p,
+.features-inner_block .intro_arrows i {
+  color: black;
+}
+
+.features-inner_block .intro-headphone_img {
+  position: absolute;
+  width: 100%;
+}
+
+.features-inner_block .intro-inner-bottom {
+  margin-top: 2vw;
+  width: 7vw;
+}
+
+.features-inner_block .intro-inner-bottom span {
+  border-bottom: .2vw solid transparent;
+}
+
+.features-inner_block .intro-inner-bottom span:hover {
+  border-color: black;
+}
+
+.features-inner-block_uppertext {
+  font-family: "Oswald", sans-serif;
+  font-size: 0.6vw;
+  font-weight: unset;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.1vw;
+  border: .5px solid black;
+  width: max-content;
+  background: black;
+  padding: 0 .2vw;
+}
+
+.features-inner-block_title {
+  font-family: "Oswald", sans-serif;
+  font-size: 2.5vw;
+  font-weight: unset;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: unset;
+  margin-bottom: 2vh;
+}
+
+.features-inner-block_flexrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: max-content;
+}
+
+.features-inner-block_flexrow i {
+  margin-left: 1.2vw;
+}
+
+.features-inner-block-flexrow_text {
+  font-family: "Oswald", sans-serif;
+  font-size: 0.8vw;
+  font-weight: unset;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 0.05vw;
+}
+
+.features-inner-block_headphonecolor {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3vw;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, transparent 0px 0px 0px 1px;
+  width: 22vw;
+  height: 15vw;
+}
+
+.features-inner-block-headphonecolor_side {
+  display: flex;
+  flex-direction: column;
+  justify-content: unset;
+  align-items: center;
+}
+
+.features-inner-block-headphonecolor_side:first-child {
+  margin-left: 1.5vw;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+}
+
+.features-inner-block-headphonecolor_side .circle_3,
+.features-inner-block-headphonecolor_side .circle_4,
+.features-inner-block-headphonecolor_side .circle_7,
+.features-inner-block-headphonecolor_side .circle_8 {
+  top: 18%;
+}
+
+.features-inner-block-headphonecolor_side div {
+  display: flex;
+  flex-direction: row;
+  justify-content: unset;
+  align-items: center;
+  margin-bottom: 1vw;
+  position: relative;
+  width: 10vw;
+  height: 2vw;
+}
+
+.features-inner-block-headphonecolor_side div .colorsBorder_F:first-of-type {
+  display: flex;
+  flex-direction: unset;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: inherit;
+  margin-bottom: 0;
+}
+
+.features-inner-block-headphonecolor_side div .colorsBorder_F:last-of-type {
+  width: 85%;
+  padding-left: .8vw;
+}
+
+.features-inner-block-headphonecolor_side div .colorsBorder_F i {
+  position: absolute;
+  padding: .6vw;
+  background: black;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  cursor: pointer;
+}
+
+.features-inner-block-headphonecolor_side div .colorsBorder_S {
+  width: 1.8vw;
+  height: 95%;
+  border: .1vw solid transparent;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.features-inner-block-headphonecolor_side div .colorsBorder1 {
+  padding-top: .7vw;
+  padding-bottom: .94vw;
+  padding-left: .9vw;
+  padding-right: .7vw;
+}
+
+.features-inner-block-headphonecolor_side div p {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1vw;
+  font-weight: 500;
+  color: black;
+  text-transform: capitalize;
+  letter-spacing: unset;
+}
+
+.features-inner-block-headphonecolor_side div:last-child {
+  margin-bottom: 0;
+}
+
+.features-inner-block_img {
+  display: flex;
+  flex-direction: unset;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 23vw;
+}
+
+.features-inner-block-img_set {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: auto;
+  height: 100%;
+}

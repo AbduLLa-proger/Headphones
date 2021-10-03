@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Work+Sans:wght@300;400;500;600;700&display=swap");
+.intro {
+  display: flex;
+  flex-direction: unset;
+  justify-content: center;
+  align-items: center;
+  background: #511712;
+  padding-top: 4vw;
+  padding-bottom: 2vw;
+}
+
+.intro-headphone_img {
+  width: auto;
+  height: 100%;
+}
+
+.intro .container {
+  position: relative;
+}
+
+.intro_arrows {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  height: 4vw;
+}
+
+.intro_arrows i {
+  color: white;
+  cursor: pointer;
+  font-size: 1vw;
+}
+
+.intro_arrows:first-child {
+  left: 0;
+  top: 46%;
+}
+
+.intro_arrows:last-child {
+  right: 0;
+  top: 46%;
+}
+
+.intro_arrows-text {
+  font-family: "Oswald", sans-serif;
+  font-size: 1vw;
+  font-weight: unset;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: unset;
+  transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+}
+
+.intro-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-inner_mainblock {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin-top: 2.3vw;
+}
+
+.intro-inner_mainblock div:nth-child(2) {
+  padding-left: 8vw;
+  padding-top: 3vw;
+  width: 55%;
+}
+
+.intro-inner_mainblock div:nth-child(3) {
+  align-items: center;
+  width: 45%;
+}
+
+.intro-inner_subblock {
+  display: flex;
+  flex-direction: column;
+  justify-content: unset;
+  align-items: unset;
+  width: 50%;
+  height: 35vw;
+}
+
+.intro-inner-subblock_uppertext {
+  font-family: "Oswald", sans-serif;
+  font-size: 0.9vw;
+  font-weight: unset;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.1vw;
+  border: .5px solid black;
+  width: max-content;
+  background: black;
+  padding: 0 .2vw;
+  position: relative;
+  top: 1vh;
+  left: .3vw;
+}
+
+.intro-inner-subblock_title {
+  margin-bottom: 2vh;
+  font-family: "Oswald", sans-serif;
+  font-size: 4.5vw;
+  font-weight: unset;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: unset;
+}
+
+.intro-inner-subblock_subtitle {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.3vw;
+  padding-right: 6vw;
+  line-height: 1.3;
+  color: white;
+}
+
+.intro-inner-subblock_buttonBlock {
+  display: flex;
+  flex-direction: row;
+  justify-content: unset;
+  align-items: center;
+  margin-top: 2vw;
+  margin-bottom: 3vw;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.intro-inner-subblock_buttonBlock i {
+  border: .5px solid white;
+  padding: 1.1vw;
+  color: white;
+  font-size: 1vw;
+  line-height: 0;
+}
+
+.intro-inner-subblock-buttonBlock_text {
+  font-family: "Oswald", sans-serif;
+  font-size: 0.9vw;
+  font-weight: unset;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.1vw;
+  border: .5px solid white;
+  padding: .4vw 1.8vw;
+}
+
+.intro-inner-subblock_video {
+  display: flex;
+  flex-direction: row;
+  justify-content: unset;
+  align-items: center;
+}
+
+.intro-inner-subblock-video_inner {
+  display: flex;
+  flex-direction: unset;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.intro-inner-subblock-video_inner video {
+  height: 6.2vw;
+}
+
+.intro-inner-subblock-video_inner:first-child {
+  margin-right: 2vw;
+}
+
+.intro-inner-subblock-video_inner:hover .fad::after {
+  color: black;
+  opacity: 1;
+  transition: color 0.3s ease;
+  -webkit-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
+  -ms-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+}
+
+.intro-inner-subblock-video_inner:hover .fad::before {
+  color: white;
+  transition: color 0.3s ease;
+  -webkit-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
+  -ms-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+}
+
+.intro-inner-subblock-video_inner i {
+  position: absolute;
+  font-size: 2vw;
+}
+
+.intro-inner-subblock-video_inner .fad::after {
+  color: white;
+  opacity: 1;
+  transition: color 0.3s ease;
+  -webkit-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
+  -ms-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+}
+
+.intro-inner-subblock-video_inner .fad::before {
+  color: black;
+  transition: color 0.3s ease;
+  -webkit-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
+  -ms-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+}
+
+.intro-inner-bottom {
+  display: flex;
+  flex-direction: unset;
+  justify-content: space-between;
+  align-items: center;
+  width: 10vw;
+  padding-top: 1vw;
+}
+
+.intro-inner-bottom_page {
+  font-size: 1vw;
+  font-family: "Oswald", sans-serif;
+  cursor: pointer;
+  border-bottom: .1vw solid transparent;
+  width: .7vw;
+  color: white;
+  opacity: .5;
+}
+
+.intro-inner-bottom_page:hover {
+  color: white;
+  border-color: white;
+  opacity: 1;
+}
+
+.intro-inner-bottom-page_hover {
+  border-color: white;
+  opacity: 1;
+}

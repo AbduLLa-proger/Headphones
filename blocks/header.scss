@@ -1,0 +1,57 @@
+@import 'vars';
+@import 'mixins';
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  &-inner {
+    @include display(flex, unset, space-between, center);
+    height: inherit;
+    width: inherit;
+    &_blocks {
+      @include display(flex, unset, center, center);
+      padding-top: 2vw;
+      & p {
+        text-transform: uppercase;
+        color:white;
+      }
+      &:nth-child(1) {
+        @include display(flex, unset, flex-start, unset);
+        padding-left: 2vw;
+        & i {
+          padding-right: 2vw;
+          font-size: 1.3vw;
+          cursor: pointer;
+          color: white;
+        }
+        & p {
+          font-family: $font1;
+          position: relative;
+          right: 1vw;
+          top: -0.5vh;
+        }
+      }
+      &:nth-child(2) {
+        & p {
+          font-family: $font2;
+        }
+      }
+      &:nth-child(3) {
+        @include display(flex, unset, flex-end, unset);
+        padding-right: 2vw;
+        & img {
+          height: 1vw;
+          cursor: pointer;
+        }
+        & img:nth-child(2) {
+          margin: 0 2vw;
+        } 
+        & p {
+          font-family: $font1;
+        }
+      }
+    }
+  }
+}

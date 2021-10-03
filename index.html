@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="blocks/style.css">
+    <link rel="stylesheet" href="blocks/icons.css">
+    <title>Document</title>
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container">
+      <div class="header-inner">
+        <div class="header-inner_blocks">
+          <i class="fas fa-bars"></i>
+          <p class="header_text">menu</p>
+        </div>
+        <div class="header-inner_blocks">
+          <p class="header_text">global shop</p>
+        </div>
+        <div class="header-inner_blocks">
+          <img src="images/search.png" alt="">
+          <img src="images/weight.png" alt="">
+          <p class="header_text">en</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- INTRO -->
+
+  <section class="intro">
+    <div class="container">
+      <div class="intro-inner">
+        <div class="intro-inner_mainblock">
+          <div class="intro_arrows">
+            <i class="fas fa-arrow-up introArrows"></i>
+            <p class="intro_arrows-text">prev</p>
+          </div>
+          <div class="intro-inner_subblock">
+            <p class="intro-inner-subblock_uppertext">technique</p>
+            <h1 class="intro-inner-subblock_title">got no strings</h1>
+            <p class="intro-inner-subblock_subtitle">
+              Get the most out of your music with an award-winning,
+              emotionally charged Beats listening experience
+            </p>
+            <span class="intro-inner-subblock_buttonBlock">
+              <p class="intro-inner-subblock-buttonBlock_text">show item</p>
+              <i class="fas fa-chevron-right"></i>
+            </span>
+            <div class="intro-inner-subblock_video">
+              <span class="intro-inner-subblock-video_inner">
+                <video src="video/video2.mp4"></video>
+                <i class="fad fa-play-circle"></i>
+              </span>
+              <span class="intro-inner-subblock-video_inner">
+                <video src="video/video1.mp4"></video>
+                <i class="fad fa-play-circle"></i>
+              </span>
+            </div>
+          </div>
+
+          <div class="intro-inner_subblock">
+            <img class="intro-headphone_img" src="" alt="">
+          </div>
+          <div class="intro_arrows">
+            <p class="intro_arrows-text">next</p>
+            <i class="fas fa-arrow-down introArrows"></i>
+          </div>
+        </div>
+        <div class="intro-inner-bottom">
+          <span class="intro-inner-bottom_page">1</span>
+          <span class="intro-inner-bottom_page">2</span>
+          <span class="intro-inner-bottom_page">3</span>
+          <span class="intro-inner-bottom_page">4</span>
+          <span class="intro-inner-bottom_page">5</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HEADPHONE FEATURES -->
+  
+  <section class="features">
+    <div class="container">
+      <div class="features-inner">
+        <div class="features-inner_block">
+          <p class="features-inner-block_uppertext">featured</p>
+          <h2 class="features-inner-block_title">available<br/>colors</h2>
+          <span class="features-inner-block_flexrow">
+            <p class="features-inner-block-flexrow_text">full catalogue</p>
+            <i class="fas fa-chevron-right"></i>
+          </span>
+          <div class="features-inner-block_headphonecolor">
+            <div class="features-inner-block-headphonecolor_side"></div>
+            <div class="features-inner-block-headphonecolor_side"></div>
+          </div>
+        </div>
+        <div class="features-inner_block">
+          <div class="intro_arrows">
+            <i class="fas fa-arrow-up featureArrows"></i>
+            <p class="intro_arrows-text">prev</p>
+          </div>
+          <div class="features-inner-block_img">
+            <img class="features-inner-block-img_set" src="" alt="">
+          </div>
+          <div class="intro-inner-bottom features-img_bottom">
+          </div>
+          <div class="intro_arrows">
+            <p class="intro_arrows-text">next</p>
+            <i class="fas fa-arrow-down featureArrows"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDEO SECTION -->
+
+  <section class="video-section">
+    <div class="video-section_inner">
+      <video class="main-video pause" src="video/video4.mp4"></video>
+      <i class="fad fa-play-circle play" id="play"></i>
+      <div class="video-section-inner_background"></div>
+      <div class="video-section-inner_block">
+        <div class="video-section-inner-block_container">
+          <div class="video-section-inner-block_content"></div>
+          <div class="video-section-inner-block_content">
+            <i class="fas fa-volume"></i>
+            <span class="volume-line">
+              <div class="volume-line_inner">
+                <span class="volume_circle"></span>
+                <span class="volume_progress"></span>
+              </div>
+              <span class="volume_indicator move"></span>
+            </span>
+            <i class="fas fa-cog"></i>
+            <i class="fas fa-expand" id="fullscreen"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="video-section_progress"></div>
+    <div class="video-section_duration"></div>
+  </section>
+
+  <!-- HEADPHONE PRODUCTS -->
+
+  <section class="products">
+    <div class="container">
+      <div class="products-inner">
+        <div class="products-inner_mainblock">
+          <div class="products_description">
+
+            <p class="products-title">our products</p>
+
+            <div class="products-description_inner">
+              <p class="products-text" id="products-text_options" data-id='0'>headphones</p>
+              <span class="products-text_block">
+                <p id="item-text">red</p>
+                <p id="item-text">ultra violete</p>
+                <p id="item-text">beats icon</p>
+                <p id="item-text">wireless</p>
+                <p id="item-text">collaborations</p>
+              </span>
+            </div>
+
+            <div class="products-description_inner">
+              <p class="products-text" id="products-text_options" data-id='1'>earphones</p>
+              <span class="products-text_block">
+                <p id="item-text">red</p>
+                <p id="item-text">ultra violete</p>
+                <p id="item-text">beats icon</p>
+                <p id="item-text">wireless</p>
+                <p id="item-text">collaborations</p>
+              </span>
+            </div>
+
+            <div class="products-description_inner">
+              <p class="products-text" id="products-text_options" data-id='2'>speakers</p>
+              <span class="products-text_block">
+                <p id="item-text">red</p>
+                <p id="item-text">ultra violete</p>
+                <p id="item-text">beats icon</p>
+                <p id="item-text">wireless</p>
+                <p id="item-text">collaborations</p>
+              </span>
+            </div>
+
+            <div class="products-description_inner">
+              <p class="products-text">price</p>
+              <div class="products-price_line">
+                <span class="products-price">50</span>
+                <span class="products-price">1550</span>
+              </div>
+              <div class="products-price_line">
+                <span class="products-price_circle"></span>
+                <span class="products-price_circle"></span>
+                <div class="products-price_set"></div>
+              </div>
+            </div>
+
+            <div class="products-description_inner">
+              <p class="products-text" id="products-text_colors">colors</p>
+              <span class="products-text_block">
+                <div><span class="colors-circle" data-id="0"></span><p id="colors-text" data-id="0">black</p></div>
+                <div><span class="colors-circle" data-id="1"></span><p id="colors-text" data-id="1">red</p></div>
+                <div><span class="colors-circle" data-id="2"></span><p id="colors-text" data-id="2">green</p></div>
+                <div><span class="colors-circle" data-id="3"></span><p id="colors-text" data-id="3">yellow</p></div>
+              </span>
+            </div>
+
+          </div>
+        </div>
+        <div class="products-inner_mainblock">
+          <div class="products-inner-mainblock_body">
+            <div class="products-inner-mainblock_up">
+              <div class="products-inner-mainblock-up_function">
+                <span>sort by</span>
+                <span class="main-sort">price</span>
+                <span class="products-hover-sort_block"></span>
+                <i class="fas fa-chevron-down"></i>
+                <div class="products-hidden-sort_block">
+                  <p class="sort-type">price</p>
+                  <p class="sort-type">colors</p>
+                  <p class="sort-type">alphabet</p>
+                </div>
+              </div>
+              <div class="products-inner-mainblock-up_function">
+                <span class="fas fa-bars"></span>
+                <span class="dots"></span>
+              </div>
+            </div>
+            <div class="products-inner-mainblock_items"></div>
+          </div>
+          <div class="products-inner-mainblock_pages">
+            <i class="fas fa-arrow-left" id="products-arrow-controller"></i>
+            <div class="products-inner-mainblock-pages_inner"></div>
+            <i class="fas fa-arrow-right" id="products-arrow-controller"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE -->
+
+  <section class="service">
+    <div class="service-main">
+      <div class="service-img">
+        <img src="images/pharell.png" alt="" class="service-img-pos">
+      </div>
+
+      <div class="container">
+        <div class="service-inner">
+          <div class="service-inner_block">
+            <span class="service-inner-block_next">
+              <p>next</p>
+              <i class="fas fa-arrow-right"></i>
+            </span>
+            <p class="features-inner-block_uppertext">resources</p>
+            <h2 class="features-inner-block_title">service and warranty</h2>
+            <p class="intro-inner-subblock_subtitle">Shop for genuine Beats by Dre products at an Apple Online
+              Store, Apple Retail Store or an authorized retailer
+            </p>
+            <span class="service-inner-block_subtext">
+              <p>view service and warranty</p>
+              <i class="fas fa-chevron-right"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer class="footer">
+    <div class="footer-line"></div>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-inner_block">
+          <p>news</p>
+          <p>catalog</p>
+          <p>contacts</p>
+        </div>
+        <div class="footer-inner_block">
+          <p>about us</p>
+          <p>delivery</p>
+          <p>faq</p>
+        </div>
+        <div class="footer-inner_block">
+          <p>global shop</p>
+          <span class="footer-icons">
+            <i class="fab fa-youtube"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+          </span>
+        </div>
+        <div class="footer-inner_block">
+          <input type="text" id="email" class="input" placeholder="ENTER EMAIL">
+          <span>
+            <p>subscribe</p>
+            <i class="fas fa-chevron-right"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="Javascript/image-list.js"></script>
+  <script src="Javascript/Javascript.js"></script>
+</body>
+</html>
+
+
+
+<!--
+  Hello, my name is Abdullokh, now I am studying at home and after reading your working conditions, I realized that I have enough time for this job, and also considering the fact that I constantly sit at the computer, I think this work will not be difficult for me.
+-->
+

@@ -1,0 +1,114 @@
+@import "vars";
+@import "mixins";
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+}
+
+.input {
+  background: transparent;
+  border: 0px;
+  padding-bottom: .8vw;
+  border-bottom: 0.1vw solid black;
+  color: black;
+  width: 100%;
+  &:focus {
+    outline: transparent;
+    border-bottom: 0.1vw solid black;
+  }
+}
+
+.container {
+  height: inherit;
+  width: 80vw;
+  margin: 0 auto;
+}
+
+video::-webkit-media-controls {
+  display: none !important;
+}
+
+.colors-circle {
+  padding: 0;
+  @include transition(.3s, padding);
+  &-text {
+    padding-left: 0;
+    @include transition(.3s, padding-left);
+  }
+}
+
+.colors {
+  padding: 7%;
+  @include border(50%);
+  background-color: black;
+  @include transition(.3s, padding);
+}
+
+.pl {
+  padding-left: 1vw !important;
+  @include transition(.3s, padding-left);
+}
+
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  font-family: $font1;
+  color: black;
+  opacity: .5;
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  font-family: $font1;
+  color: black;
+  opacity: .5;
+}
+:-ms-input-placeholder {
+  /* IE 10+ */
+  font-family: $font1;
+  color: black;
+  opacity: .5;
+}
+
+
+@import "mixins";
+@import "header";
+@import "intro";
+@import "features";
+@import "video_section";
+@import 'products';
+@import 'service';
+@import 'footer';

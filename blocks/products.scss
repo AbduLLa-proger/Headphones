@@ -1,0 +1,305 @@
+@import 'vars';
+@import 'mixins';
+
+.products {
+  @include display(flex, unset, unset, center);
+  padding-bottom: 2vw;
+  &-inner {
+    @include display(flex, row, unset, center);
+    width: 100%;
+    height: inherit;
+    padding: 0 3vw;
+    padding-top: 4vw;
+    &_mainblock {
+      @include display(flex, column, unset, unset);
+      &:first-child {
+        width: 30%;
+      }
+      &:last-child {
+        width: 70%;
+        padding-right: .5vw;
+      }
+    }
+    &-mainblock {
+      &_up {
+        @include display(flex, row, space-between, unset);
+        padding-top: .5vw;
+      }
+      &-up_function {
+        @include display(flex, unset, space-between, center);
+        font-weight: 700;
+        height: 2vh;
+        text-transform: uppercase;
+        position: relative;
+        & .fa-bars {
+          font-size: 1.5vw;
+          padding-right: 1vw;
+          cursor: pointer;
+        }
+        & .dots {
+          cursor: pointer;
+        }
+        &:first-child {
+          justify-content: left;
+          width: 15vw;
+          & span { 
+          font-family: $font1;
+          font-size: 1vw;
+          opacity: 1;
+          padding-right: .5vw;
+          &:first-child {
+            padding-right: 1vw;
+          }
+          &:last-child {
+            padding-right: 1.5vw;
+          }
+            &:hover {
+              opacity: 1;
+            }
+          }
+          & i {
+            font-size: 1vw;
+            padding-top: .2vw;
+            padding-right: .5vw;
+            padding-left: .4vw;
+            @include transition(.5s, transform);
+            &:hover ~ .opacity-text {
+              opacity: 1;
+            }
+          }
+        }
+      }
+      &_items {
+        @include grid(grid, 3, unset, space-between);
+      }
+      &-items {
+        &_block {
+          @include display(flex, column, center, unset);
+          width: 16vw;
+          padding-top: 3vw;
+        }
+        &_img {
+          @include display(flex, unset, center, center);
+          width: 100%;
+          height: 14vw;
+          background: $color5;
+          & img {
+            width: auto;
+            height: 90%;
+          }
+        }
+        &_name {
+          @include font($font1, 1vw, 700, black, uppercase, unset);
+        }
+        &_text {
+          opacity: .5;
+          font-family: $font2;
+          font-size: 1vw;
+          padding-top: .2vh;
+        }
+        &_subblock {
+          @include display(flex, unset, space-between, center);
+          padding-top: .6vw;
+          & p {
+            @include font($font1, 1vw, 700, $color4, unset, unset);
+          }
+          & span {
+            @include display(flex, unset, space-between, center);
+          }
+        }
+      }
+      &-pages_inner {
+        @include display(flex, row, space-between, center);
+        width: inherit;
+        height: inherit;
+      }
+      &_pages {
+        @include display(flex, row, space-between, center);
+        width: 18vw;
+        margin: 0 auto;
+        margin-top: 4vw;
+        padding: 0 3vw;
+        cursor: pointer;
+        position: relative;
+        & .fas {
+          user-select: none;
+          position: absolute;
+          font-size: 1vw;
+          &:first-of-type {
+            left: 0;
+          }
+          &:last-of-type {
+            right: 0;
+          }
+        }
+        & p {
+          opacity: .5;
+          font-size: 1vw;
+          font-family: $font1;
+          user-select: none;
+          &:hover {
+            opacity: 1;
+          }
+        }
+        & .opacity-text {
+          opacity: 1;
+        }
+      }
+    }
+  }
+  
+  &_description {
+    @include display(flex, column, space-between, unset);
+  }
+  &-title {
+    @include font($font1, 3.3vw, 700, black, uppercase, .1vw);
+    line-height: 1.2;
+  }
+  &-text {
+    @include font($font1, 1.5vw, 500, black, uppercase, unset);
+    cursor: pointer;
+    width: fit-content;
+    opacity: .5;
+    z-index: 100;
+    & ~ &_show {
+      height: 17.5vw !important;
+      @include transition(0.5s, height);
+    }
+    &:hover {
+      opacity: 1;
+    }
+    &_block {
+      @include display(flex, column, unset, flex-start);
+      padding: 0 1vw;
+      width: 7vw;
+      height: 0px;
+      overflow: hidden;
+      @include transition(0.5s, height);
+      & div {
+        @include display(flex, unset, unset, center);
+        &:nth-of-type(2) span {
+          padding: 10%;
+        }
+      }
+      & p {
+        @include font($font1, 1vw, unset, black, capitalize, unset);
+        line-height: 1.5;
+        cursor: pointer;
+        opacity: .5;
+        padding: 1vw 0;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  &-description_inner {
+    margin-bottom: 3vw;
+    &:nth-of-type(1) {
+      margin-top: 3vw;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &:last-of-type > .products-text_show {
+      height: 14vw !important;
+      @include transition(0.5s, height);
+    }
+  }
+
+  &-price {
+    position: absolute;
+    top: 0;
+    font-family: $font1;
+    font-weight: 700;
+    &:nth-child(2) {
+      right: 0;
+    }
+    &_line {
+      @include display(flex, unset, unset, center);
+      width: 12vw;
+      height: 1.5vw;
+      position: relative;
+      &:nth-of-type(1) {
+        margin-top: 1vw;
+      }
+      &:nth-of-type(2) {
+        width: 10.5vw;
+        margin-left: .8vw;
+      }
+    }
+    &_set {
+      position: absolute;
+      background: $color4;
+      width: 100%;
+      height: 10%;
+      cursor: pointer;
+      z-index: 100;
+    }
+    &_circle {
+      position: absolute;
+      padding: .3vw;
+      @include border(50%);
+      background: $color4;
+      cursor: pointer;
+      &:nth-last-child(2) {
+        left: 100%;
+      }
+    }
+  }
+  &-hidden-sort_block {
+    position: absolute;
+    height: 0;
+    top: -1.5vw;
+    right: 0;
+    overflow: hidden;
+    @include transition(.5s, height);
+    & p {
+      font-family: $font1;
+      font-size: 1vw;
+      font-weight: 700;
+      opacity: .5;
+      cursor: pointer;
+      &:hover { opacity: 1; }
+    }
+
+  }
+}
+
+.opacity-text {
+  opacity: 1 !important;
+  @include transition(.5s, opacity);
+}
+
+.fa-star {
+  color: red;
+}
+
+.dots {
+  background: url('../images/dots.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 1.1vw;
+  height: 1.1vw;
+}
+.page-dots {
+  @include display(flex, unset, space-between, center);
+  opacity: .5;
+  font-weight: 700;
+  font-size: 1.5vw;
+  cursor: unset;
+}
+.rotate {
+  @include transform(-90deg); 
+  @include transition(.5s,transform);
+}
+.display { height: 4.5vw; @include transition(.5s, height);}
+.products-hover-sort_block {
+  position: absolute;
+  width: 5vw;
+  height: 2vw;
+  right: 40%;
+  cursor: pointer;
+  z-index: 100;
+}

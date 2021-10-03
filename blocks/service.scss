@@ -1,0 +1,76 @@
+@import 'vars';
+@import 'mixins';
+.service {
+  @include display(flex, column, unset, unset);
+  position: relative;
+  height: 61vw;
+  padding-top: 6vw;
+  &-main {
+    height: 53vw;
+  }
+  &-inner {
+    @include display(flex, unset, left, center);
+    height: inherit;
+    padding: 0 3vw;
+    &_block {
+      @include display(flex, column, unset, unset);
+      padding-top: 3vw;
+      height: 28vw;
+      width: 38.7vw;
+      position: relative;
+      background-color: white;
+      bottom: 4.2vw;
+      & .features-inner-block_uppertext {
+        font-size: 1.1vw;
+      }
+      & .features-inner-block_title {
+        padding-right: 5vw;
+        font-size: 3.8vw;
+        font-weight: 600;
+      }
+      & .intro-inner-subblock_subtitle {
+        color: $color7;
+        font-size: 1.45vw;
+      }
+    }
+    &-block {
+      &_next {
+        @include display(flex, unset, space-between, center);
+        width: 4vw;
+        position: absolute;
+        right: 5%;
+        top: 3%;
+        & p {
+          @include font($font1, 1vw, unset, black, uppercase, .1vw);
+        }
+        & i {
+          font-size: 1vw;
+        }
+      }
+      &_subtext {
+        @include display(flex, unset, space-between, center);
+        width: 17.5vw;
+        margin-top: 2vw;
+        & p {
+          @include font($font1, 1vw, 600, black, uppercase, .1vw);
+        }
+        & i {
+          font-size: 1vw;
+        }
+      }
+    }
+  }
+  &-img {
+    @include display(flex, unset, unset, center);
+    position: absolute;
+    right: 0;
+    height: 45vw;
+    overflow: hidden;
+    &-pos {
+      width: 64.5vw;
+      height: 56vw;
+      position: relative;
+      top: 2vw;
+    }
+  }
+}

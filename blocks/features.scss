@@ -1,0 +1,155 @@
+@import 'vars';
+@import 'mixins';
+.features {
+  @include display(flex, column, unset, unset);
+  width: 100%;
+  padding-bottom: 4vw;
+  &-inner {
+    @include display(flex, unset, space-between, center);
+    width: inherit;
+    &_block {
+      @include display(flex, column, unset, unset);
+      position: relative;
+      margin-top: 7vw;
+      & .intro-inner-bottom span {
+        color: black;
+      }
+      &:nth-child(2) {
+        align-items: center;
+        width: 55%;
+      }
+      & .intro_arrows {
+        &:first-child {
+          left: 10%;
+        }
+        &:last-child {
+          right: 10%;
+        }
+        & p,
+        & i {
+          color: black;
+        }
+      }
+      & .intro-headphone_img {
+        position: absolute;
+        width: 100%;
+      }
+      & .intro-inner-bottom {
+        margin-top: 2vw;
+        width: 7vw;
+        & span {
+          border-bottom: .2vw solid transparent;
+        }
+        & span:hover {
+          border-color: black;
+        }
+      }
+    }
+    &-block {
+      &_uppertext {
+        @include font($font1, .6vw, unset, white, uppercase, .1vw);
+        border: .5px solid black;
+        width: max-content;
+        background: black;
+        padding: 0 .2vw;
+      }
+      &_title {
+        @include font($font1, 2.5vw, unset, black, uppercase, unset);
+        margin-bottom: 2vh;
+      }
+      &_flexrow {
+        @include display(flex, row, space-between, center);
+        width: max-content;
+        & i {
+          margin-left: 1.2vw;
+        }
+      }
+      &-flexrow {
+        &_text {
+          @include font($font1, 0.8vw, unset, black, uppercase, 0.05vw);
+        }
+      }
+      &_headphonecolor {
+        @include display(flex, row, space-between, center);
+        margin-top: 3vw;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+        rgba(0, 0, 0, 0) 0px 0px 0px 1px;
+        width: 22vw;
+        height: 15vw;
+      }
+      &-headphonecolor_side {
+        @include display(flex, column, unset, center);
+        &:first-child {
+          margin-left: 1.5vw;
+          margin-top: 2vw;
+          margin-bottom: 2vw;
+        }
+        & .circle_3,
+        & .circle_4,
+        & .circle_7,
+        & .circle_8 {
+          top: 18%;
+        }
+        & div {
+          @include display(flex, row, unset, center);
+          margin-bottom: 1vw;
+          position: relative;
+          width: 10vw;
+          height: 2vw;
+
+          & .colorsBorder {
+            &_F {
+              &:first-of-type {
+                @include display(flex, unset, center, center);
+                width: 20%;
+                height: inherit;
+                margin-bottom: 0;
+              }
+              &:last-of-type {
+                width: 85%;
+                padding-left: .8vw;
+              }
+              & i {
+                position: absolute;
+                padding: .6vw;
+                background: black;
+                @include border(50%);
+                cursor: pointer;
+              }
+            }
+            &_S {
+              width: 1.8vw;
+              height: 95%;
+              border: .1vw solid transparent;
+              @include border(50%);
+            }
+          }
+          & .colorsBorder1 {
+            padding-top: .7vw;
+            padding-bottom: .94vw;
+            padding-left: .9vw;
+            padding-right: .7vw;
+          }
+          & p {
+            @include font ($font2, 1vw, 500, black, capitalize, unset);
+          }
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+      &_img {
+        @include display(flex, unset, center, center);
+        width: auto;
+        height: 23vw;
+      }
+      &-img_set {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: auto;
+        height: 100%;
+      }
+    }
+  }
+}

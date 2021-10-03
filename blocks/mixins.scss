@@ -1,0 +1,54 @@
+@mixin display ($display, $direction, $content, $align) {
+  display: $display;
+  flex-direction: $direction;
+  justify-content: $content;
+  align-items: $align;
+}
+
+@mixin grid($display, $number, $Jcontent, $Pcontent) {
+  display: $display;
+  grid-template-columns: repeat($number, auto);
+  justify-content: $Jcontent;
+  place-content: $Pcontent;
+}
+
+@mixin font ($name, $size, $weight, $color, $transform, $letter) {
+  font-family: $name;
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+  text-transform: $transform;
+  letter-spacing: $letter;
+}
+
+@mixin transition ($time, $name) {
+  transition: $name $time ease;
+  -webkit-transition: $name $time ease;
+  -moz-transition: $name $time ease;
+  -ms-transition: $name $time ease;
+  -o-transition: $name $time ease;
+}
+
+@mixin border ($radius) {
+  border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  -o-border-radius: $radius;
+}
+
+@mixin transformZ ($deg) {
+  transform: rotateZ($deg);
+  -webkit-transform: rotateZ($deg);
+  -moz-transform: rotateZ($deg);
+  -ms-transform: rotateZ($deg);
+  -o-transform: rotateZ($deg);
+}
+
+@mixin transform ($deg) {
+  transform: rotate($deg);
+  -webkit-transform: rotate($deg);
+  -moz-transform: rotate($deg);
+  -ms-transform: rotate($deg);
+  -o-transform: rotate($deg);
+}
